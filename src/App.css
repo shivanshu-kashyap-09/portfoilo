@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+/* Smooth animations for hero section */
+.animate-on-mount {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Blob animation */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Image hover effect */
+.image-glow:hover {
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.4);
+}
+
+/* Button hover animations */
+@keyframes pulse-light {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(37, 99, 235, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+  }
+}
+
+.pulse-on-hover:hover {
+  animation: pulse-light 1.5s infinite;
+}
+/* Smooth scrolling for anchor links */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Account for fixed header height */
+body {
+	padding-top: 4.5rem; /* adjust if header height changes */
+}
+
+/* Animated underline for nav links */
+.nav-link {
+	position: relative;
+	color: inherit;
+}
+.nav-link::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	height: 2px;
+	width: 0%;
+	background: linear-gradient(90deg, #60a5fa, #93c5fd);
+	transition: width 220ms ease;
+}
+.nav-link:hover::after,
+.nav-link:focus::after {
+	width: 100%;
+}
+
+/* small fade-in animation used for mobile menu */
+@keyframes fade-in {
+	from { opacity: 0; transform: translateY(-6px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+	animation: fade-in 240ms ease-out both;
+}
+
+/* subtle click effect */
+.nav-link:active {
+	transform: scale(0.98);
+}
+
+/* make sure gradient text displays nicely on dark bg */
+.bg-clip-text {
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
