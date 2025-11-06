@@ -1,78 +1,120 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { FaCss3, FaDatabase, FaGithub, FaHtml5, FaJava, FaJs, FaLinkedin, FaPython, FaReact } from 'react-icons/fa'
-import { SiLeetcode } from 'react-icons/si'
-import shivanshu from "../assets/shivanshu.jpg"
+import { SiLeetcode, SiGmail } from 'react-icons/si'
 import { FaC } from 'react-icons/fa6'
+import shivanshu from "../assets/shivanshu.jpg"
 
 const Hero = () => {
+  const resumeFile = '../../public/resume.pdf'
   return (
-    <section className="min-h-screen flex flex-col text-center mt-4 min-w-screen">
-
-      <div className="font-bold">
-        
-        <p className="text-4xl font-extrabold tracking-wide">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center px-4 md:px-10 lg:px-20 overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="font-bold mt-4"
+      >
+        <p className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-wide">
           Hi, I'm <span className="text-orange-500 drop-shadow-lg">Shivanshu Kashyap</span>
         </p>
-        <p className="text-3xl text-orange-500 mt-2 font-bold tracking-wider drop-shadow-md">Full Stack Developer</p>
-      </div>
+        <p className="text-2xl sm:text-3xl text-orange-500 mt-2 font-bold tracking-wider drop-shadow-md">
+          Full Stack Developer
+        </p>
+      </motion.div>
 
-      <div className='grid grid-cols-3'>
-
-        <div className="flex flex-col gap-4 mt-10 text-2xl text-center ">
-          <div className="font-bold">
-            <p className="text-4xl font-extrabold tracking-wide">
-              Transforming <span className="text-orange-500 drop-shadow-lg">code</span> and
-            </p>
-            <p className="text-3xl text-orange-500 mt-2 font-bold tracking-wider drop-shadow-md">logic into life.</p>
-          </div>
-
-          <div className="space-x-4 mt-30">
-            <a
+      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-10 md:gap-6 mt-10 w-full max-w-7xl">
+        <motion.div
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          viewport={{ once: true }}
+          className="flex flex-col gap-6 text-center order-2 md:order-1"
+        >
+          <p className="text-3xl sm:text-4xl font-extrabold tracking-wide">
+            Transforming <span className="text-orange-500 drop-shadow-lg">code</span> and
+          </p>
+          <p className="text-2xl sm:text-3xl text-orange-500 font-bold tracking-wider drop-shadow-md">
+            logic into life.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+            <motion.a
+              whileHover={{ scale: 1.07 }}
+              whileTap={{ scale: 0.95 }}
               href="#projects"
-              className="bg-orange-500 text-white px-8 py-2 rounded-full shadow-lg hover:bg-orange-600 hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold"
+              className="bg-orange-500 text-white px-8 py-2 rounded-full shadow-lg hover:bg-orange-600 hover:shadow-xl transition-all font-semibold"
             >
               Projects ↗
-            </a>
-            <a
-              href="#contact"
-              className="border-2 border-orange-500 text-orange-500 px-8 py-2 rounded-full hover:bg-orange-500 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 font-semibold"
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.07 }}
+              whileTap={{ scale: 0.95 }}
+              download={resumeFile}
+              href="/resume.pdf"
+              className="border-2 border-orange-500 text-orange-500 px-8 py-2 rounded-full hover:bg-orange-500 hover:text-white hover:shadow-lg transition-all font-semibold"
             >
               Resume
-            </a>
+            </motion.a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="relative mt-8">
-          <div className="absolute inset-0 bg-orange-100 rounded-full w-64 h-64 mx-auto blur-2xl opacity-40"></div>
-          <img
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          viewport={{ once: true }}
+          className="relative flex justify-center order-1 md:order-2"
+        >
+          <div className="absolute bg-orange-200 rounded-full w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 blur-3xl opacity-40"></div>
+          <motion.img
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.4 }}
             src={shivanshu}
             alt="Shivanshu Kashyap"
-            className="relative z-10 w-95 h-95 object-cover rounded-full border-4 border-orange-500 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500"
+            className="relative z-10 w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 object-cover rounded-full border-4 border-orange-500 shadow-xl"
           />
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col items-center gap-6 text-2xl  mt-10">
-          <h2 className="font-bold text-2xl text-orange-500 drop-shadow-md">Technical Skills:</h2>
-          <span className='flex flex-row gap-4'>
-            <FaJava size={36} className="hover:text-orange-500 transform hover:scale-110 transition-all duration-300 hover:drop-shadow-lg" />
-            <FaPython size={36} className="hover:text-orange-500 transform hover:scale-110 transition-all duration-300 hover:drop-shadow-lg" />
-            <FaJs size={36} className="hover:text-orange-500 transform hover:scale-110 transition-all duration-300 hover:drop-shadow-lg" />
-            <FaC size={36} className="hover:text-orange-500 transform hover:scale-110 transition-all duration-300 hover:drop-shadow-lg" />
-          </span>
-          <span className='flex flex-row gap-4'>
-            <FaHtml5 size={36} className="hover:text-orange-500 transform hover:scale-110 transition-all duration-300 hover:drop-shadow-lg" />
-            <FaCss3 size={36} className="hover:text-orange-500 transform hover:scale-110 transition-all duration-300 hover:drop-shadow-lg" />
-            <FaDatabase size={36} className="hover:text-orange-500 transform hover:scale-110 transition-all duration-300 hover:drop-shadow-lg" />
-            <FaReact size={36} className="hover:text-orange-500 transform hover:scale-110 transition-all duration-300 hover:drop-shadow-lg" />
-          </span>
-          <h2 className="font-bold text-2xl text-orange-500 drop-shadow-md">Connect with me:</h2>
-          <span className='flex flex-row gap-6'>
-            <a href="#" aria-label="GitHub" className="hover:text-black transform hover:scale-110 transition-all duration-300 hover:drop-shadow-xl"><FaGithub size={44} /></a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-blue-700 transform hover:scale-110 transition-all duration-300 hover:drop-shadow-xl"><FaLinkedin size={44} /></a>
-            <a href="https://leetcode.com/u/Shivanshu_09/" aria-label="LeetCode" className="hover:text-orange-500 transform hover:scale-110 transition-all duration-300 hover:drop-shadow-xl"><SiLeetcode size={44} /></a>
-          </span>
-
-        </div>
+        <motion.div
+          initial={{ opacity: 0, x: 60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          viewport={{ once: true }}
+          className="flex flex-col items-center gap-6 order-3"
+        >
+          <h2 className="font-bold text-2xl sm:text-3xl text-orange-500 drop-shadow-md">
+            Technical Skills:
+          </h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            {[FaJava, FaPython, FaJs, FaC, FaHtml5, FaCss3, FaDatabase, FaReact].map((Icon, i) => (
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                key={i}
+                className="text-gray-200 hover:text-orange-500 transition-all duration-300"
+              >
+                <Icon size={36} />
+              </motion.div>
+            ))}
+          </div>
+          <h2 className="font-bold text-2xl sm:text-3xl text-orange-500 drop-shadow-md">
+            Connect with me:
+          </h2>
+          <div className="flex justify-center gap-6">
+            <motion.a whileHover={{ scale: 1.15 }} href="https://github.com/shivanshu-kashyap-09" className="hover:text-black transition-all duration-300">
+              <FaGithub size={44} />
+            </motion.a>
+            <motion.a whileHover={{ scale: 1.15 }} href="https://www.linkedin.com/in/shivanshu-kashyap-18b426244/" className="hover:text-blue-700 transition-all duration-300">
+              <FaLinkedin size={44} />
+            </motion.a>
+            <motion.a whileHover={{ scale: 1.15 }} href="mailto:kashyapshivanshu63@gmail.com" className="hover:text-red-500 transition-all duration-300">
+              <SiGmail size={40} />
+            </motion.a>
+            <motion.a whileHover={{ scale: 1.15 }} href="https://leetcode.com/u/Shivanshu_09/" className="hover:text-orange-500 transition-all duration-300">
+              <SiLeetcode size={44} />
+            </motion.a>
+          </div>
+        </motion.div>
       </div>
     </section>
   )

@@ -8,6 +8,9 @@ import Education from './components/Education';
 import Experiance from './components/Experiance';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Git from './components/Git';
+import Achivements from './components/Achivements';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -29,10 +32,21 @@ function App() {
     <section id="experiance">
       <Experiance />
     </section>
+    <section id="github">
+      <Git />
+    </section>
     <section id="projects">
       <Projects />
     </section>
+    <section id="achivements">
+      <Achivements/>
+    </section>
+    {/* <section id="contact">
+      <Contact />
+    </section> */}
+    <section id="contact">
     <Footer />
+    </section>
     </>
   )
 }
