@@ -4,7 +4,7 @@ import shivanshu from "../assets/shivanshu.jpg";
 
 const About = () => {
   return (
-    <section className="min-h-screen relative overflow-hidden flex items-center justify-center text-white">
+    <section className="min-h-screen relative overflow-hidden flex items-center text-white">
       <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-orange-500 rounded-bl-full opacity-40"></div>
       <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-orange-500 rounded-tr-full opacity-40"></div>
 
@@ -15,7 +15,7 @@ const About = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="relative w-72 sm:w-80 md:w-96">
+          <div className="relative w-72 sm:w-80 md:w-96 md:mt-10 lg:mt-0">
             <motion.div
               className="absolute inset-0 bg-orange-500 rounded-3xl transform rotate-6"
               initial={{ rotate: 12, opacity: 0 }}
@@ -25,7 +25,7 @@ const About = () => {
             <motion.img
               src={shivanshu}
               alt="Professional Portrait"
-              className="relative z-10 w-full h-auto rounded-3xl shadow-2xl transform -rotate-3"
+              className="hidden md:block relative z-10 w-full h-auto rounded-3xl shadow-2xl transform -rotate-3"
               whileHover={{ rotate: 0, scale: 1.05 }}
               transition={{ duration: 0.4 }}
             />

@@ -44,7 +44,7 @@ const Achivements = () => {
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="w-full max-w-6xl"
+        className="lg:w-full lg:max-w-6xl w-80 md:w-170"
       >
         <Swiper
           modules={[Autoplay, Pagination]}

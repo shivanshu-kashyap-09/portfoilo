@@ -31,7 +31,7 @@ const Experience = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="min-h-screen mt-4 flex flex-col items-center text-center"
+      className="lg:min-h-screen mt-4 flex flex-col items-center text-center"
     >
       <motion.h2
         initial={{ opacity: 0, scale: 0.8 }}
@@ -49,7 +49,7 @@ const Experience = () => {
           whileInView={{ scaleY: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="absolute left-1/2 transform -translate-x-1/2 h-full w-[3px] bg-gradient-to-b from-orange-400 to-orange-700 origin-top"
+          className="absolute left-1/2 transform -translate-x-1/2 md:h-full w-[3px] bg-gradient-to-b from-orange-400 to-orange-700 origin-top"
         ></motion.div>
 
         {experiences.map((exp, index) => (
@@ -75,8 +75,8 @@ const Experience = () => {
               transition={{ duration: 0.3 }}
               className={`bg-[#1b1b1b] text-white p-6 rounded-2xl shadow-lg w-[85%] md:w-[45%] transition-transform ${
                 index % 2 === 0
-                  ? "md:ml-[55%] text-left"
-                  : "md:mr-[55%] text-left"
+                  ? "md:ml-[52%] lg:ml-[55%] text-left"
+                  : "md:mr-[52%] lg:mr-[55%] text-left"
               }`}
             >
               <h3 className="text-xl font-semibold text-orange-400">{exp.role}</h3>

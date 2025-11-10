@@ -9,9 +9,10 @@ const Projects = () => {
       live_link: "https://ai-tripmate-ui.onrender.com/",
       github_link: "https://github.com/shivanshu-kashyap-09/portfolio.git",
       points: [
-        "Developed and maintained the university website.",
-        "Improved UI design, responsiveness, and SEO.",
-        "Collaborated with the dev team on daily updates."
+        "Developed a fully responsive personal portfolio website using React.js and Tailwind CSS.",
+        "Integrated smooth animations and hover effects using Framer Motion",
+        "Designed and built an interactive UI showcasing projects, experience, and skills.",
+        "Showcased live project, resume downloads, and certifications.",
       ]
     },
     {
@@ -38,16 +39,16 @@ const Projects = () => {
         "Delivered a seamless, interactive UI with features like destination suggestions and trip summaries."
       ]
     },
-    {
-      name: "ChatBot",
-      live_link: "https://ai-tripmate-ui.onrender.com/",
-      github_link: "https://github.com/shivanshu-kashyap-09/chatbot.git",
-      points: [
-        "Developed and maintained the university website.",
-        "Improved UI design, responsiveness, and SEO.",
-        "Collaborated with the dev team on daily updates."
-      ]
-    },
+    // {
+    //   name: "ChatBot",
+    //   live_link: "https://ai-tripmate-ui.onrender.com/",
+    //   github_link: "https://github.com/shivanshu-kashyap-09/chatbot.git",
+    //   points: [
+    //     "Developed and maintained the university website.",
+    //     "Improved UI design, responsiveness, and SEO.",
+    //     "Collaborated with the dev team on daily updates."
+    //   ]
+    // },
   ]
 
   return (
@@ -56,7 +57,7 @@ const Projects = () => {
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="mb-12 font-bold text-orange-500 tracking-wide drop-shadow-[0_0_12px_#f97316] relative text-3xl sm:text-5xl md:text-2xl lg:text-5xl font-serif"
+        className="mb-12 font-bold text-orange-500 tracking-wide drop-shadow-[0_0_12px_#f97316] relative text-4xl sm:text-5xl md:text-5xl font-serif"
       >
         Projects
       </motion.h2>
@@ -91,8 +92,8 @@ const Projects = () => {
               transition={{ duration: 0.3 }}
               className={`bg-[#1b1b1b] text-white p-6 rounded-2xl shadow-lg w-[85%] md:w-[45%] hover:shadow-orange-400/30 ${
                 index % 2 === 0
-                  ? "md:ml-[55%] text-left"
-                  : "md:mr-[55%] text-left"
+                  ? "md:ml-[52%] lg:ml-[55%] text-left"
+                  : "md:mr-[52%] lg:mr-[55%] text-left"
               }`}
             >
               <div className="flex flex-row gap-4 items-center mb-3">

@@ -17,28 +17,28 @@ function App() {
   return (
     <>
     <Header />
-    <section id="home">
+     <section id="home">
       <Hero />
     </section>
     <section id="about">
       <About />
     </section>
-    <section id="skills">
+     <section id="skills">
       <Skills />
     </section>
     <section id="education">
       <Education />
     </section>
-    <section id="experiance">
+     <section id="experiance">
       <Experiance />
     </section>
-    <section id="github">
+     <section id="github" className='hidden lg:block'>
       <Git />
     </section>
-    <section id="projects">
+     <section id="projects">
       <Projects />
     </section>
-    <section id="achivements">
+     <section id="achivements">
       <Achivements/>
     </section>
     {/* <section id="contact">
@@ -46,7 +46,7 @@ function App() {
     </section> */}
     <section id="contact">
     <Footer />
-    </section>
+    </section> 
     </>
   )
 }

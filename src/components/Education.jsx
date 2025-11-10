@@ -25,7 +25,7 @@ const Education = () => {
         whileInView={{ scaleX: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="absolute border-t-2 border-orange-400 w-[700px] opacity-60 translate-y-60 origin-center"
+        className="absolute border-t-2 border-orange-400 w-[90%] sm:w-[700px] opacity-60 translate-y-60 origin-center"
       ></motion.div>
 
       <motion.div
@@ -33,21 +33,23 @@ const Education = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.8 }}
         viewport={{ once: true }}
-        className="absolute border-l-2 border-orange-400 h-20 w-0 translate-y-60 translate-x-0 opacity-70"
+        className="absolute border-l-2 border-orange-400 h-16 sm:h-20 w-0 translate-y-60 translate-x-0 opacity-70"
       ></motion.div>
+
       <motion.div
         whileHover={{ scale: 1.1 }}
-        className="absolute w-10 h-10 rounded-full bg-orange-500 border-4 border-orange-300 shadow-[0_0_20px_#f97316] translate-y-55"
+        className="absolute w-8 sm:w-10 h-8 sm:h-10 rounded-full bg-orange-500 border-4 border-orange-300 shadow-[0_0_20px_#f97316] translate-y-55"
       ></motion.div>
+
       <motion.div
         whileHover={{ scale: 1.08 }}
-        className="border border-orange-500 bg-gradient-to-br from-orange-600/90 to-orange-500/80 h-24 w-60 rounded-xl flex flex-col justify-center items-center translate-y-56 shadow-[0_0_25px_#f97316] transition-all duration-300 hover:shadow-orange-400/50"
+        className="border border-orange-500 bg-gradient-to-br from-orange-600/90 to-orange-500/80 h-24 w-52 sm:w-60 rounded-xl flex flex-col justify-center items-center translate-y-56 shadow-[0_0_25px_#f97316] transition-all duration-300 hover:shadow-orange-400/50"
       >
-        <span className="text-lg font-bold text-white drop-shadow-[0_0_6px_#fff3]">
+        <span className="text-base sm:text-lg font-bold text-white drop-shadow-[0_0_6px_#fff3]">
           Intermediate (12<sup>th</sup>)
         </span>
-        <h5 className="text-sm text-gray-200">S.V.M Ranipur, Haridwar</h5>
-        <h2 className="text-orange-200 text-lg font-extrabold mt-1">82.4%</h2>
+        <h5 className="text-xs sm:text-sm text-gray-200">S.V.M Ranipur, Haridwar</h5>
+        <h2 className="text-orange-200 text-base sm:text-lg font-extrabold mt-1">82.4%</h2>
       </motion.div>
 
       <motion.div
@@ -55,21 +57,23 @@ const Education = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.8 }}
         viewport={{ once: true }}
-        className="absolute border-l-2 border-orange-400 h-20 w-0 translate-y-40 -translate-x-84 opacity-70"
+        className="absolute border-l-2 -ml-20 border-orange-400 h-16 sm:h-20 w-0 translate-y-40 -translate-x-[60px] sm:-translate-x-84 opacity-70 md:ml-40 lg:ml-0"
       ></motion.div>
+
       <motion.div
         whileHover={{ scale: 1.1 }}
-        className="absolute w-10 h-10 rounded-full bg-orange-500 border-4 border-orange-300 shadow-[0_0_20px_#f97316] translate-y-55 -translate-x-84"
+        className="absolute w-8 sm:w-10 h-8 -ml-20 sm:h-10 rounded-full bg-orange-500 border-4 border-orange-300 shadow-[0_0_20px_#f97316] translate-y-55 -translate-x-[60px] sm:-translate-x-84 md:ml-40 lg:ml-0"
       ></motion.div>
+
       <motion.div
         whileHover={{ scale: 1.08 }}
-        className="border border-orange-500 bg-gradient-to-br from-orange-600/90 to-orange-500/80 h-24 w-60 rounded-xl flex flex-col justify-center items-center -translate-y-32 -translate-x-84 shadow-[0_0_25px_#f97316] transition-all duration-300 hover:shadow-orange-400/50"
+        className="border border-orange-500 bg-gradient-to-br from-orange-600/90 to-orange-500/80 h-24 w-52 sm:w-60 rounded-xl flex flex-col justify-center items-center -ml-23 -translate-y-32 -translate-x-[60px] sm:-translate-x-84 shadow-[0_0_25px_#f97316] transition-all duration-300 hover:shadow-orange-400/50 md:ml-50 lg:ml-0"
       >
-        <span className="text-lg font-bold text-white drop-shadow-[0_0_6px_#fff3]">
+        <span className="text-base sm:text-lg font-bold text-white drop-shadow-[0_0_6px_#fff3]">
           High School (10<sup>th</sup>)
         </span>
-        <h5 className="text-sm text-gray-200">S.V.M Ranipur, Haridwar</h5>
-        <h2 className="text-orange-200 text-lg font-extrabold mt-1">82.1%</h2>
+        <h5 className="text-xs sm:text-sm text-gray-200">S.V.M Ranipur, Haridwar</h5>
+        <h2 className="text-orange-200 text-base sm:text-lg font-extrabold mt-1">82.1%</h2>
       </motion.div>
 
       <motion.div
@@ -77,21 +81,23 @@ const Education = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.8 }}
         viewport={{ once: true }}
-        className="absolute border-l-2 border-orange-400 h-20 w-0 translate-y-40 translate-x-90 opacity-70"
+        className="absolute border-l-2 -mr-20 border-orange-400 h-16 sm:h-20 w-0 translate-y-40 translate-x-[65px] sm:translate-x-90 opacity-70 md:mr-50 lg:mr-0"
       ></motion.div>
+
       <motion.div
         whileHover={{ scale: 1.1 }}
-        className="absolute w-10 h-10 rounded-full bg-orange-500 border-4 border-orange-300 shadow-[0_0_20px_#f97316] translate-y-55 translate-x-90"
+        className="absolute w-8 sm:w-10 -mr-20 h-8 sm:h-10 rounded-full bg-orange-500 border-4 border-orange-300 shadow-[0_0_20px_#f97316] translate-y-55 translate-x-[65px] sm:translate-x-90 md:mr-50 lg:mr-0"
       ></motion.div>
+
       <motion.div
         whileHover={{ scale: 1.08 }}
-        className="border border-orange-500 bg-gradient-to-br from-orange-600/90 to-orange-500/80 h-24 w-60 rounded-xl flex flex-col justify-center items-center -translate-y-56 translate-x-90 shadow-[0_0_25px_#f97316] transition-all duration-300 hover:shadow-orange-400/50"
+        className="border border-orange-500 bg-gradient-to-br from-orange-600/90 to-orange-500/80 h-24 w-52 sm:w-60 rounded-xl flex flex-col justify-center items-center -translate-y-56 translate-x-[65px] sm:translate-x-90 shadow-[0_0_25px_#f97316] transition-all duration-300 hover:shadow-orange-400/50 md:mr-60 lg:mr-0 -mr-20"
       >
-        <span className="text-lg font-bold text-white drop-shadow-[0_0_6px_#fff3]">
+        <span className="text-base sm:text-lg font-bold text-white drop-shadow-[0_0_6px_#fff3]">
           BCA
         </span>
-        <h5 className="text-sm text-gray-200">COER University, Roorkee</h5>
-        <h2 className="text-orange-200 text-lg font-extrabold mt-1">92.2%</h2>
+        <h5 className="text-xs sm:text-sm text-gray-200">COER University, Roorkee</h5>
+        <h2 className="text-orange-200 text-base sm:text-lg font-extrabold mt-1">92.2%</h2>
       </motion.div>
     </motion.section>
   );
