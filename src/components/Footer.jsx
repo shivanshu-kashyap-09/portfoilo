@@ -11,7 +11,7 @@ const Footer = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="bg-gradient-to-b from-gray-900 to-black text-white pt-12 pb-6 px-6"
+      className="bg-gradient-to-b from-gray-900 to-black text-white pt-12 pb-6 px-6 w-screen"
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         <motion.div
