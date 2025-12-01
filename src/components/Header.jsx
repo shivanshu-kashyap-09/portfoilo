@@ -27,7 +27,7 @@ return (
 initial={{ y: -60, opacity: 0 }}
 animate={{ y: 0, opacity: 1 }}
 transition={{ duration: 0.6, ease: 'easeOut' }}
-className="fixed top-0  bg-gray-900/95 backdrop-blur-sm shadow-lg border-b border-orange-500/20 z-50 overflow-x-hidden w-screen"
+className="fixed top-0  bg-gray-900/95 backdrop-blur-sm shadow-lg border-b border-orange-500/20 z-50 w-full"
 > <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4"> <div className="flex items-center justify-between">
 <motion.h2
 initial={{ opacity: 0, x: -30 }}
