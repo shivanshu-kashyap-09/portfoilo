@@ -78,7 +78,7 @@ const Achivements = () => {
                     alt={achiv.name}
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.6 }}
-                    className="h-full w-full object-cover rounded-xl"
+                    className="h-full w-full object-contain rounded-xl"
                   />
                 </motion.div>
                 <motion.h3

@@ -8,7 +8,7 @@ const About = () => {
       <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-orange-500 rounded-bl-full opacity-40"></div>
       <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-orange-500 rounded-tr-full opacity-40"></div>
 
-      <div className="container mx-auto px-6 py-16 relative z-10 flex flex-col-reverse lg:flex-row items-center gap-12">
+      <div className="container px-6 -py-2 relative z-10 flex flex-col-reverse lg:flex-row items-center">
         <motion.div
           className="lg:w-1/2 flex justify-center"
           initial={{ opacity: 0, x: -80 }}
@@ -59,9 +59,9 @@ const About = () => {
             whileInView={{ opacity: [0, 1], y: [20, 0] }}
             transition={{ duration: 0.8 }}
           >
-            Detail-oriented and enthusiastic Full Stack Developer with hands-on experience in designing and developing scalable,
-            high-performance web applications using modern JavaScript libraries and Python frameworks. Proficient in MERN stack,
-            Flask, and DevOps tools like Docker. Proven ability to build secure platforms with robust backends and engaging UIs.
+            I am a Full Stack Developer focused on building scalable, high-performance web applications. Currently pursuing a BCA at COER University, I have hands-on experience from internships at COER University and HashedBit Innovations, working on both frontend and backend systems. <br /><br />
+
+            I specialize in Java, JavaScript, Python, React, Spring Boot, Node.js, Flask, MongoDB, and MySQL, and have built projects including an AI Tripmate, Foodio, AI ChatBot, ChatApp.
           </motion.p>
 
           <motion.p
