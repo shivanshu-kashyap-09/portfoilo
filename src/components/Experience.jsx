@@ -4,23 +4,33 @@ import { motion } from 'framer-motion';
 const Experience = () => {
   const experiences = [
     {
-      role: "Frontend Developer",
-      company: "COER University, Roorkee",
+      role: "Software Developer Intern",
+      company: "LMS Athena — Onsite",
+      duration: "Feb 2026 – Present",
+      points: [
+        "Developed new features for a SaaS LMS using React.js, Node.js, and REST APIs.",
+        "Integrated AWS S3 for scalable media storage, reducing upload latency by an estimated 35%.",
+        "Participated in daily Agile stand-ups, sprint planning, and peer code reviews in a cross-functional team."
+      ]
+    },
+    {
+      role: "Web Development Intern",
+      company: "COER University — Roorkee, Uttarakhand",
       duration: "May 2025 – July 2025",
       points: [
-        "Developed and maintained the university website.",
-        "Improved UI design, responsiveness, and SEO.",
-        "Collaborated with the dev team on daily updates."
+        "Rebuilt and maintained the official university website, improving mobile responsiveness.",
+        "Implemented on-page SEO improvements (meta tags, semantic HTML, image optimisation).",
+        "Reduced average page load time by optimising CSS and compressing assets."
       ]
     },
     {
       role: "Software Developer Intern",
-      company: "HashedBit Innovations Pvt. Ltd.",
+      company: "HashedBit Innovations Pvt. Ltd. — Remote",
       duration: "Feb 2025 – May 2025",
       points: [
-        "Contributed to live client projects.",
-        "Participated in daily progress meetings.",
-        "Enhanced coding and teamwork skills."
+        "Contributed to live production features using React.js and Node.js in an Agile team environment.",
+        "Debugged and resolved critical UI issues, improving component render performance.",
+        "Gained hands-on experience with production deployment workflows, Git branching, and code reviews."
       ]
     }
   ];

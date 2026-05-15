@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Education from './components/Education';
-import Experiance from './components/Experiance';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Git from './components/Git';
@@ -29,15 +29,15 @@ function App() {
     <section id="education">
       <Education />
     </section>
-     <section id="experiance">
-      <Experiance />
+    <section id="experience">
+      <Experience />
     </section>
      <section id="github" className='hidden lg:block'>
       <Git />
     </section>
-     <section id="projects">
+     {/* <section id="projects">
       <Projects />
-    </section>
+    </section> */}
      <section id="achivements">
       <Achivements/>
     </section>

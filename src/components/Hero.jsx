@@ -6,9 +6,9 @@ import { FaC } from 'react-icons/fa6'
 import shivanshu from "../assets/shivanshu.jpg"
 
 const Hero = () => {
-  const resumeFile = '../../public/resume.pdf'
+  const resumeFile = '/shivanshu_cv.pdf'
   return (
-    <section className="min-h-screen flex flex-col items-center text-center px-4 lg:px-20 overflow-hidden">
+    <section className="min-h-screen flex flex-col items-center text-center px-4 lg:px-20 overflow-hidden bg-gray-900 py-12">
       <motion.div
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -49,8 +49,9 @@ const Hero = () => {
             <motion.a
               whileHover={{ scale: 1.07 }}
               whileTap={{ scale: 0.95 }}
-              download={resumeFile}
-              href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              href={resumeFile}
               className="border-2 border-orange-500 text-orange-500 px-8 py-2 rounded-full hover:bg-orange-500 hover:text-white hover:shadow-lg transition-all font-semibold"
             >
               Resume

@@ -5,7 +5,7 @@ function Header() {
 const [isMenuOpen, setIsMenuOpen] = useState(false)
 const [activeLink, setActiveLink] = useState('#')
 
-const resumeFile = '../../public/resume.pdf'
+const resumeFile = '/shivanshu_cv.pdf'
 
 const links = [
 { href: '', label: 'Home' },
@@ -14,7 +14,7 @@ const links = [
 { href: '#projects', label: 'Projects' },
 { href: '#achivements', label: 'Achievements' },
 { href: '#contact', label: 'Contact' },
-{ href: resumeFile, label: 'Resume', isButton: true, download: true },
+{ href: resumeFile, label: 'Resume', isButton: true },
 ]
 
 const onLinkClick = (href) => {
@@ -53,7 +53,8 @@ Shivanshu Kashyap
                 key={label}
                 href={href}
                 onClick={() => onLinkClick(href)}
-                download={download ? true : undefined}
+                target="_blank"
+                rel="noreferrer"
                 className="px-5 py-2 text-white rounded-full bg-orange-500 hover:bg-orange-600 transition-all shadow-lg text-sm md:text-base font-semibold"
               >
                 {label}
@@ -125,8 +126,8 @@ Shivanshu Kashyap
                 whileTap={{ scale: 0.95 }}
                 key={label}
                 href={href}
-                download={download ? true : undefined}
-                onClick={() => onLinkClick(href)}
+                target="_blank"
+                rel="noreferrer"
                 className="w-full max-w-xs text-center px-4 py-2 text-white bg-orange-500 rounded-full hover:bg-orange-600 transition-all font-semibold"
               >
                 {label}

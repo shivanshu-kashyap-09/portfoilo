@@ -97,7 +97,7 @@ const Education = () => {
           BCA
         </span>
         <h5 className="text-xs sm:text-sm text-gray-200">COER University, Roorkee</h5>
-        <h2 className="text-orange-200 text-base sm:text-lg font-extrabold mt-1">92.2%</h2>
+        <h2 className="text-orange-200 text-base sm:text-lg font-extrabold mt-1">CGPA: 9.11</h2>
       </motion.div>
     </motion.section>
   );

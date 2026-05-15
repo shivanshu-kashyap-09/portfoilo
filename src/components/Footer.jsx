@@ -4,7 +4,7 @@ import { SiLeetcode, SiGmail } from "react-icons/si";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
-  const resumeFile = '../../public/resume.pdf'
+  const resumeFile = '/shivanshu_cv.pdf'
   return (
     <motion.footer
       initial={{ opacity: 0, y: 60 }}
@@ -29,8 +29,9 @@ const Footer = () => {
           </p>
           <motion.a
             whileHover={{ scale: 1.05 }}
-            href="/resume.pdf"
-            download={resumeFile}
+            href={resumeFile}
+            target="_blank"
+            rel="noreferrer"
             className="border-2 border-orange-500 px-8 py-2 rounded-full hover:bg-orange-500 hover:text-white hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 font-semibold mt-10"
           >
             Resume
