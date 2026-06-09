@@ -13,7 +13,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="font-bold mt-4 md:mx-30"
+        className="font-bold mt-4 md:mx-32"
       >
         <p className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide">
           Hi, I'm <span className="text-orange-500 drop-shadow-lg">Shivanshu Kashyap</span>

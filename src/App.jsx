@@ -35,9 +35,9 @@ function App() {
      <section id="github" className='hidden lg:block'>
       <Git />
     </section>
-     {/* <section id="projects">
+     <section id="projects">
       <Projects />
-    </section> */}
+    </section>
      <section id="achivements">
       <Achivements/>
     </section>

@@ -53,13 +53,13 @@ const Experience = () => {
         Experience
       </motion.h2>
 
-      <div className="relative w-full max-w-3xl">
+      <div className="relative w-full max-w-3xl px-4 md:px-0 mt-10">
         <motion.div
           initial={{ scaleY: 0 }}
           whileInView={{ scaleY: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="absolute left-1/2 transform -translate-x-1/2 md:h-full w-[3px] bg-gradient-to-b from-orange-400 to-orange-700 origin-top"
+          className="absolute left-6 md:left-1/2 transform -translate-x-1/2 h-full w-[3px] bg-gradient-to-b from-orange-400 to-orange-700 origin-top"
         ></motion.div>
 
         {experiences.map((exp, index) => (
@@ -70,20 +70,20 @@ const Experience = () => {
             transition={{ duration: 0.6, delay: index * 0.2 }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.02 }}
-            className={`relative flex flex-col md:flex-row items-center mb-16 ${
+            className={`relative flex flex-col md:flex-row items-start md:items-center mb-16 ${
               index % 2 === 0 ? "md:justify-start" : "md:justify-end"
             }`}
           >
             <motion.div
               whileHover={{ scale: 1.2 }}
               transition={{ type: "spring", stiffness: 200 }}
-              className="absolute left-1/2 transform -translate-x-1/2 bg-orange-500 border-4 border-orange-300 w-6 h-6 rounded-full shadow-[0_0_15px_#f97316]"
+              className="absolute left-6 md:left-1/2 transform -translate-x-1/2 mt-6 md:mt-0 bg-orange-500 border-4 border-[#1b1b1b] w-6 h-6 rounded-full shadow-[0_0_15px_#f97316] z-10"
             ></motion.div>
 
             <motion.div
               whileHover={{ scale: 1.05, boxShadow: "0 0 25px #f97316" }}
               transition={{ duration: 0.3 }}
-              className={`bg-[#1b1b1b] text-white p-6 rounded-2xl shadow-lg w-[85%] md:w-[45%] transition-transform ${
+              className={`bg-[#1b1b1b] text-white p-6 rounded-2xl shadow-lg w-full md:w-[45%] transition-transform ml-16 md:ml-0 ${
                 index % 2 === 0
                   ? "md:ml-[52%] lg:ml-[55%] text-left"
                   : "md:mr-[52%] lg:mr-[55%] text-left"

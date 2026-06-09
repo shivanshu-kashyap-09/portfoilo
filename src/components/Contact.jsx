@@ -114,7 +114,7 @@ const Contact = () => {
             <img
               src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg"
               alt="Contact"
-              className="w-full h-97 object-cover rounded-t-2xl"
+              className="w-full h-96 object-cover rounded-t-2xl"
             />
           </div>
 
