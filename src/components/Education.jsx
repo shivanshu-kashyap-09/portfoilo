@@ -74,7 +74,7 @@ const Education = () => {
         <EducationCard 
           title="BCA"
           school="COER University, Roorkee"
-          score="CGPA: 9.11"
+          score="CGPA: 8.9"
           delay={0.6}
         />
       </div>

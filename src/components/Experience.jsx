@@ -4,9 +4,19 @@ import { motion } from 'framer-motion';
 const Experience = () => {
   const experiences = [
     {
+      role: "Trainee Web Analyst",
+      company: "Ebizon pvt ltd — Onsite",
+      duration: "Aug 2026 – Present",
+      points: [
+        "Developed and customized responsive eCommerce web applications.",
+        "Debugged and resolved application, API, UI, and performance issues.",
+        "Collaborated with developers and project teams to analyze requirements, and deliver timely solutions."
+      ]
+    },
+    {
       role: "Software Developer Intern",
       company: "LMS Athena — Onsite",
-      duration: "Feb 2026 – Present",
+      duration: "Feb 2026 – May 2026",
       points: [
         "Developed new features for a SaaS LMS using React.js, Node.js, and REST APIs.",
         "Integrated AWS S3 for scalable media storage, reducing upload latency by an estimated 35%.",
@@ -16,7 +26,7 @@ const Experience = () => {
     {
       role: "Web Development Intern",
       company: "COER University — Roorkee, Uttarakhand",
-      duration: "May 2025 – July 2025",
+      duration: "May 2025 – Jul 2025",
       points: [
         "Rebuilt and maintained the official university website, improving mobile responsiveness.",
         "Implemented on-page SEO improvements (meta tags, semantic HTML, image optimisation).",

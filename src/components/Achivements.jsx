@@ -27,6 +27,7 @@ const Achivements = () => {
     { name: "100 Days Badge", org: "Leetcode", time: "April 2025", img: leetcode100 },
     { name: "200 Days Badge", org: "Leetcode", time: "July 2025", img: leetcode200 },
     { name: "Annual Badge 2025", org: "Leetcode", time: "October 2025", img: leetcode2025 },
+    { name: "Research Publication", org: "TechRxiv (DOI: 10.36227...)", time: "2025", img: poster },
   ];
 
   return (

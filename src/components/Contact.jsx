@@ -129,6 +129,17 @@ const Contact = () => {
                 </a>
               </div>
             </div>
+
+            <div className="flex items-center gap-4 bg-white p-4 rounded-lg">
+              <span className="text-orange-700 text-xl">📞</span>
+              <div className="grid grid-cols-1">
+                <p className="text-orange-500 text-lg font-bold">Phone</p>
+
+                <a href="tel:+917017592590" className="hover:underline text-gray-800">
+                  +91 7017592590
+                </a>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>

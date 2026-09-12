@@ -59,9 +59,9 @@ const About = () => {
             whileInView={{ opacity: [0, 1], y: [20, 0] }}
             transition={{ duration: 0.8 }}
           >
-            I am a Full Stack Developer focused on building scalable, high-performance web applications. Currently pursuing a BCA at COER University, I have hands-on experience from internships at LMS Athena, COER University, and HashedBit Innovations, working on both frontend and backend systems. <br /><br />
+            BCA Graduate and Full Stack Developer with hands-on experience building scalable, production-ready web applications using React.js, Node.js, MongoDB, and MySQL. Skilled in designing REST APIs, cloud integration (AWS S3), Docker-based deployments, CI/CD workflows, and performance optimization. I have hands-on experience from my roles at Ebizon pvt ltd, LMS Athena, COER University, and HashedBit Innovations. <br /><br />
 
-            I specialize in Java, JavaScript, Python, React, Spring Boot, Node.js, Flask, MongoDB, and MySQL, and have built projects including an AI Tripmate, Foodio, AI ChatBot, ChatApp.
+            I specialize in Java, JavaScript, Python, React, Spring Boot, Node.js, MongoDB, and MySQL, and have built projects including an AI Tripmate, Foodio, AI ChatBot, ChatApp.
           </motion.p>
 
           <motion.p

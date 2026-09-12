@@ -35,8 +35,8 @@ const Projects = () => {
       live_link: "https://foodios.onrender.com/",
       github_link: "https://github.com/shivanshu-kashyap-09/foodio.git",
       image: foodio,
-      tags: ["MERN", "Redis", "OAuth2"],
-      description: "Full-stack food ordering platform with real-time menu updates and secure order placement."
+      tags: ["React", "Node.js", "Socket.io", "MySQL"],
+      description: "Production-ready food ordering platform with real-time WebSocket order tracking, AI chatbot, and Razorpay integration."
     },
     {
       name: "Ai-Tripmate",
