@@ -5,7 +5,7 @@ function Header() {
 const [isMenuOpen, setIsMenuOpen] = useState(false)
 const [activeLink, setActiveLink] = useState('#')
 
-const resumeFile = '/shivanshu_cv.pdf'
+const resumeFile = '/shivanshu_kashyap.pdf'
 
 const links = [
 { href: '', label: 'Home' },
